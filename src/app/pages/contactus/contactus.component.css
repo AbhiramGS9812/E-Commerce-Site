@@ -1,0 +1,47 @@
+.body{
+    background-image: linear-gradient(  #43C6AC, #F8FFAE);
+}
+
+.heads{
+    color: white;
+    text-shadow: 10px 10px 20px #4a20f0;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.cards{
+  border-radius: 40px;
+}
+
+.cardShadow{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.contains{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+
+
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+  }
+  .map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+
+

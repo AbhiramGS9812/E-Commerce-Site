@@ -1,0 +1,24 @@
+<div class="body">
+	<app-navbar></app-navbar>
+	<div class="container mt-lg-5 mb-lg-5 pb-5 contains">
+		<div class="row g-3">
+			@for (item of data; track $index) {
+				<div class="col col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+					<div class="card cardShadow" style="width: 17rem; height: 32rem;">
+						<img src={{item.image}} class="card-img-top p-4" width="350px" height="200px" alt="...">
+						<div class="card-body">
+							<h5 class="card-title text-center">{{item.title|slice:0:30}}</h5>
+							<h4 class="card-title text-center">${{item.price}}</h4>
+							<p class="card-text text-center">{{item.description|slice:0:100}}...</p>
+							<div style="display: flex; padding-bottom: 5px;">
+								<button class="button-74" role="button" routerLink="{{item.id}}">Browse</button>
+								<h5 style="font-weight: lighter; padding-left: 10px; padding-top: 20px;">Rating: {{item.rating.rate}}</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+	<app-footer></app-footer>
+</div>
